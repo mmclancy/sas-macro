@@ -6,7 +6,7 @@
  Result: Boolean 
            1 if &parm is a valid SAS floating point value
            0 otherwise
-Depends: Data step view MacView.IsNum, defined as
+Depends: SQL view MacView.IsNum, defined as
             select input(symget('parm'),?? best32.) is not null as isnum 
                from dictionary.macros   
          which is created in preprocess/IsNum.sas
